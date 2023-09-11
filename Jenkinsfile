@@ -1,5 +1,5 @@
 node {
-    docker.image('golang:alpine').inside('-p 7000:7000') {
+    docker.image('golang:alpine').inside('-u root -p 7000:7000') {
         stage('Build') {
             checkout scm
             sh 'go build'
