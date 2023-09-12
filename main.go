@@ -30,7 +30,7 @@ func main() {
 	case *div:
 		fmt.Printf("Division: %d \n", division(a, b))
 	default:
-		fmt.Fprintln(os.Stderr, "Wrong option try with add, subtract, div and multply")
+		fmt.Fprintln(os.Stderr, "Wrong option try with add, subtract, div and multply!")
 		os.Exit(1)
 	}
 }
